@@ -1,12 +1,14 @@
 # Repository Comparison Script
 
-This script compares a Git repository with an SVN repository using multiple methods:
-1. File checksum comparison
-2. File diff comparison
-3. Commit history comparison
+This script compares a Git repository with an SVN repository across:
+1. File checksums
+2. File diffs
+3. Commit history (for branches)
+4. All branches
+5. All tags
 
-If all comparisons match, the script exits with success (0).  
-Any mismatch results in a non-zero exit status.
+If all comparisons match, the script exits with code 0.  
+Any mismatch triggers a non-zero exit.
 
 ## Requirements
 - `git`
